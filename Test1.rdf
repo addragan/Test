@@ -23,6 +23,8 @@
 	<dcat:record rdf:resource="http://nobelprize.org/datarecords/dcat#dr1"/>
 	<dct:rights rdf:resource="http://nobelprize.org/rights/n0"/>
 	<dct:spatial rdf:resource="http://nobelprize.org/spatial/n0"/>
+	  <dct:hasPart rdf:resource="http://example.org/dataset-003.html"/>
+	  <dct:isPartOf rdf:resource="http://example.org/dataset-003.html"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://nobelprize.org/datarecords/dcat#dr1">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
