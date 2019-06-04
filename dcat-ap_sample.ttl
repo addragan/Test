@@ -1,0 +1,338 @@
+@prefix : <#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix schema: <http://schema.org/> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/accrualPeriodicity
+dct:accrualPeriodicity rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/conformsTo
+dct:conformsTo rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+dct:format rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+dct:language rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dct:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dct:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dct:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/spatial
+dct:spatial rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/temporal
+dct:temporal rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/type
+dct:type rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/endDate
+schema:endDate rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/startDate
+schema:startDate rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#country-name
+vcard:country-name rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#fn
+vcard:fn rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasAddress
+vcard:hasAddress rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasEmail
+vcard:hasEmail rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasTelephone
+vcard:hasTelephone rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#hasValue
+vcard:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#locality
+vcard:locality rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#postal-code
+vcard:postal-code rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2006/vcard/ns#street-address
+vcard:street-address rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#dataset
+dcat:dataset rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#distribution
+dcat:distribution rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+dcat:keyword rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#landingPage
+dcat:landingPage rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#record
+dcat:record rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#theme
+dcat:theme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#themeTaxonomy
+dcat:themeTaxonomy rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/primaryTopic
+foaf:primaryTopic rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/dc/terms/Location
+dct:Location rdf:type owl:Class .
+
+
+###  http://purl.org/dc/terms/PeriodOfTime
+dct:PeriodOfTime rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Address
+vcard:Address rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#VCar
+vcard:VCar rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Voice
+vcard:Voice rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/vcard/ns#Work
+vcard:Work rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Catalog
+dcat:Catalog rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#CatalogRecord
+dcat:CatalogRecord rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+dcat:Dataset rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Distribution
+dcat:Distribution rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agen
+foaf:Agen rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+foaf:Agent rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://data.nobelprize.org/period
+<http://data.nobelprize.org/period> rdf:type owl:NamedIndividual ,
+                                             dct:PeriodOfTime ;
+                                    schema:endDate "2013-01-05"^^xsd:date ;
+                                    schema:startDate "1905-03-01"^^xsd:date .
+
+
+###  http://eurovoc.europa.eu/100142
+<http://eurovoc.europa.eu/100142> rdf:type owl:NamedIndividual ,
+                                           skos:Concept ;
+                                  skos:inScheme <http://nobelprize.org/categoryScheme/cs1> ;
+                                  skos:prefLabel "Private" .
+
+
+###  http://nobelprize.org/categoryScheme/cs1
+<http://nobelprize.org/categoryScheme/cs1> rdf:type owl:NamedIndividual ,
+                                                    skos:ConceptScheme ;
+                                           dct:description "Private scheme"@en .
+
+
+###  http://nobelprize.org/contacts/n1
+<http://nobelprize.org/contacts/n1> rdf:type owl:NamedIndividual ,
+                                             vcard:VCar ;
+                                    vcard:fn "Nobel Media AB" ;
+                                    vcard:hasAddress [ rdf:type vcard:Address ;
+                                                       vcard:country-name "Sweden" ;
+                                                       vcard:locality "Stockholm" ;
+                                                       vcard:postal-code "11436" ;
+                                                       vcard:street-address "Stureg. 14"
+                                                     ] ;
+                                    vcard:hasEmail <mailto:info@nobelmedia.org> ;
+                                    vcard:hasTelephone [ rdf:type vcard:Voice ,
+                                                                  vcard:Work ;
+                                                         vcard:hasValue <tel:086631722>
+                                                       ] .
+
+
+###  http://nobelprize.org/datarecords/dcat#dr1
+<http://nobelprize.org/datarecords/dcat#dr1> rdf:type owl:NamedIndividual ,
+                                                      dcat:CatalogRecord ;
+                                             dct:modified "2014-09-25" ;
+                                             foaf:primaryTopic <http://nobelprize.org/datasets/dcat#ds1> .
+
+
+###  http://nobelprize.org/datasets/dcat#Catalog
+<http://nobelprize.org/datasets/dcat#Catalog> rdf:type owl:NamedIndividual ,
+                                                       dcat:Catalog ;
+                                              dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                              dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ,
+                                                          <http://creativecommons.org/publicdomain/zero/2.0/> ;
+                                              dct:modified "2014-09-25" ;
+                                              dct:publisher <http://nobelprize.org/publisher/n0> ;
+                                              dct:rights <http://nobelprize.org/rights/n0> ;
+                                              dct:spatial "Brussels" ;
+                                              dct:title "Nobel Media Dataset catalog"@en ;
+                                              dcat:dataset <http://nobelprize.org/datasets/dcat#ds1> ;
+                                              dcat:record <http://nobelprize.org/datarecords/dcat#dr1> ;
+                                              dcat:themeTaxonomy <http://eurovoc.europa.eu/> .
+
+
+###  http://nobelprize.org/datasets/dcat#dist1
+<http://nobelprize.org/datasets/dcat#dist1> rdf:type owl:NamedIndividual ,
+                                                     dcat:Distribution ;
+                                            dct:format <http://nobelprize.org/format/rdf+xml> ;
+                                            dct:license <http://creativecommons.org/licenses/by-nc/3.0/> .
+
+
+###  http://nobelprize.org/datasets/dcat#ds1
+<http://nobelprize.org/datasets/dcat#ds1> rdf:type owl:NamedIndividual ,
+                                                   dcat:Dataset ;
+                                          dct:accrualPeriodicity "daily" ;
+                                          dct:conformsTo <http://www.nobelprize.org/nobel_organizations/nobelmedia/nobelprize_org/developer/manual-linkeddata/terms.html> ;
+                                          dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+                                          dct:modified "2014-08-27" ;
+                                          dct:spatial <http://sws.geonames.org/2673730> ;
+                                          dct:temporal <http://data.nobelprize.org/period> ;
+                                          dcat:distribution <http://nobelprize.org/datasets/dcat#dist1> ;
+                                          dcat:keyword "Nobel prize" ,
+                                                       "prize" ,
+                                                       "science" ;
+                                          dcat:landingPage "Nobelprize.org" ;
+                                          dcat:theme <http://eurovoc.europa.eu/100142> .
+
+
+###  http://nobelprize.org/publisher/n0
+<http://nobelprize.org/publisher/n0> rdf:type owl:NamedIndividual ,
+                                              foaf:Agent ;
+                                     dct:type <http://purl.org/adms/publishertype/Company> .
+
+
+###  http://nobelprize.org/publisher/n2
+<http://nobelprize.org/publisher/n2> rdf:type owl:NamedIndividual ,
+                                              foaf:Agen ;
+                                     dct:type <http://purl.org/adms/publishertype/Company> ;
+                                     foaf:name "Nobel Media AB" .
+
+
+###  http://sws.geonames.org/2673730
+<http://sws.geonames.org/2673730> rdf:type owl:NamedIndividual ,
+                                           dct:Location ;
+                                  rdfs:label "Stockholm" .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
